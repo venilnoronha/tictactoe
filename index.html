@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Tic Tac Toe</h1>
+		<h4 id="whois">&nbsp;</h4><br/>
+		<div id="board"></div>
+		<h4 id="result">&nbsp;</h4><br/>
+		<span class="btn" onclick="window.location = window.location">Play again</span>
+	</div>
+
+	<div id="info">
+		Developed by: <a href="mailto:ddmello@usc.edu">Donnabell Dmello</a> | <a href="mailto:vnoronha@usc.edu">Venil Noronha</a>
+	</div>
+
+	<script type="text/javascript" src="tictactoe.js"></script>
+	<script type="text/javascript">
+		var ttt = new TicTacToe("board", "whois", "result");
+		ttt.init();
+	</script>
+</body>
+</html>
